@@ -1,0 +1,20 @@
+<form [formGroup]="signUpForm" class="signUpForm border rounded border-primary"
+[ngClass]="{ 'border-danger': signUpForm.status === 'INVALID'}" (ngSubmit)="signUp()">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" formControlName="username"  placeholder="Joffin John">
+      <small class="form-text text-muted">Enter your username here... </small>
+    </div>
+    <div class="form-group">
+      <label for="userid">User ID</label>
+      <input type="text" class="form-control" id="userid" formControlName="userId"  placeholder="jjohn12">
+      <small class="form-text text-muted">Enter your user ID here... </small>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password</label>
+      <input type="password" class="form-control" formControlName="password" id="pwd">
+      <small class="form-text text-muted">Enter your password here... </small>
+    </div>
+    <button type="submit" class="btn btn-primary">SignUp</button>
+</form>
+

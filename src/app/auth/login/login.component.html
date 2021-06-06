@@ -1,0 +1,14 @@
+<form [formGroup]="loginForm" class="loginForm border rounded border-primary"
+[ngClass]="{ 'border-danger': loginForm.status === 'INVALID'}" (ngSubmit)="login()">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" formControlName="username"  placeholder="jjohn12">
+      <small class="form-text text-muted">Enter your username here... </small>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password</label>
+      <input type="password" class="form-control" formControlName="passwrd" id="pwd">
+      <small class="form-text text-muted">Enter your password here... </small>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>

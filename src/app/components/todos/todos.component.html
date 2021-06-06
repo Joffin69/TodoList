@@ -1,0 +1,8 @@
+<div class="card border rounded border-info" style="margin-bottom: 15px;" *ngFor="let todo of todos">
+  <div class="card-body" >
+      <p style="display: inline;" [ngClass]="{'line-through': todo.completed === true}">{{ todo.title }}</p>
+      <button type="button" style="margin-left: 10px;" class="btn btn-outline-danger" *ngIf="isUserLoggedIn" (click)="onDelete(todo)">Delete</button>
+      <button type="button" class="btn btn-outline-success" *ngIf="todo.completed !== true && isUserLoggedIn" (click)="onComplete(todo)">Complete</button>
+      <button type="button" class="btn btn-outline-info" *ngIf="todo.completed === true && isUserLoggedIn" (click)="onReOpen(todo)">Re-Open</button>
+  </div>
+</div>

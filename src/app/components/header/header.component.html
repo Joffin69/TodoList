@@ -1,0 +1,14 @@
+<!-- <div class="border rounded border-primary header">
+  <h2>TodoList App</h2>
+  <button type="button" style="margin-left: 10px;" class="btn btn-outline-danger">Delete</button>
+  <button type="button" class="btn btn-outline-success" >Complete</button>
+</div> -->
+<nav class="navbar navbar-dark bg-dark justify-content-between header">
+  <a class="navbar-brand" [routerLink]="['']" routerLinkActive="router-link-active" >TodoList App</a>
+  <form class="form-inline">
+    <button class="btn btn-success my-2 my-sm-0 space" type="submit" *ngIf="userLoggedIn === false" routerLink="signUp">Sign Up</button>
+    <button class="btn btn-info my-2 my-sm-0 space" type="submit" *ngIf="userLoggedIn === false" [routerLink]="['/login']" routerLinkActive="router-link-active" >Login</button>
+    <button class="btn btn-danger my-2 my-sm-0" type="submit" *ngIf="userLoggedIn === true" (click)="userLogOut()">LogOut</button>
+  </form>
+</nav>
+
