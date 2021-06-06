@@ -9,7 +9,7 @@ import { AuthService } from 'src/app/services/auth.service';
 @Component({
   selector: 'app-todo-list',
   templateUrl: './todo-list.component.html',
-  styleUrls: ['./todo-list.component.css']
+  styleUrls: ['./todo-list.component.less']
 })
 export class TodoListComponent implements OnInit, OnDestroy, AfterViewInit {
 

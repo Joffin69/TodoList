@@ -124,6 +124,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-crash-course"
+    }
+  },
+  "defaultProject": "angular-crash-course",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "less"
+    }
+  }
 }

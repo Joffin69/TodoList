@@ -1,0 +1,19 @@
+@backGroundColor: rgba(255, 255, 255, 0.5);
+@color_white: white;
+@color-black: black;
+
+.loginForm {
+  border-radius: 5px;
+  color: @color_white;
+  padding: 10px;
+  small {
+    color: @color_white !important;
+  }
+  input {
+    background-color: @backGroundColor !important;
+    color: @color-black;
+  }
+  ::placeholder {
+    color: @color-black;
+  }
+}

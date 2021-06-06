@@ -1,4 +1,4 @@
-<form [formGroup]="loginForm" class="loginForm border rounded border-primary"
+<form [formGroup]="loginForm" class="loginForm"
 [ngClass]="{ 'border-danger': loginForm.status === 'INVALID'}" (ngSubmit)="login()">
     <div class="form-group">
       <label for="username">Username</label>

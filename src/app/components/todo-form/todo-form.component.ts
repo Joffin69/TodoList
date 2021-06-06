@@ -1,12 +1,11 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { TodoService } from 'src/app/services/todo.service';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-todo-form',
   templateUrl: './todo-form.component.html',
-  styleUrls: ['./todo-form.component.css']
+  styleUrls: ['./todo-form.component.less']
 })
 export class TodoFormComponent implements OnInit {
 
